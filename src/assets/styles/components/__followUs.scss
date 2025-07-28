@@ -1,0 +1,120 @@
+.followUs{
+    background: #efe7d2;
+    border-top: 5px solid #000;
+    height: 1144px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper{
+        margin-top: 66px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        width: 85.1%;
+        hr{
+            background-color: black;
+            height: 5px;
+            width: 100%;
+            
+        }
+        h1{
+            font-weight: 500;
+            font-size: 40px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.62);
+        }
+        p{
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.62);
+            width: 415px;
+        }
+        &__imgBlock{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-top: 54px;
+            margin-bottom: 50px;
+            img {
+                height: 540px;
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+                margin-left: -80px; // ключевой момент — наложение
+                position: relative;
+                z-index: 2;
+                margin-top: 30px;
+
+                &:first-child {
+                margin-left: 0; 
+                }
+                &:nth-child(2){
+                    margin-top: 0;
+                    z-index: 1;
+                }
+                &:nth-child(4){
+                    margin-top: 0;
+                    z-index: 1;
+                }
+            }
+        }
+        &__emailBlock{
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            &__input{
+                border-radius: 50px;
+                width: 774px;
+                height: 100px;
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+                background: #fff;
+                display: flex;
+                position: relative;
+                input{
+                    margin-left: 40px;
+                    font-weight: 400;
+                    font-size: 36px;
+                    color: rgba(0, 0, 0, 0.62);
+
+                }
+                button{
+                    position: absolute;
+                    right: 10px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #fff;
+                    text-transform: uppercase;
+                    border-radius: 50px;
+                    width: 249px;
+                    height: 80px;
+                    background: #000;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &__text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1{
+                    font-weight: 500;
+                    font-size: 40px;
+                    
+                    color: rgba(0, 0, 0, 0.62);
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 24px;
+                    
+                    color: rgba(0, 0, 0, 0.62);
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}

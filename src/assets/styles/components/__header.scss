@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 23px;
+    hr{
+        background-color: black;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5px;
+        position: absolute;
+        width: 85.106%;
+        bottom: 0;
+        
+    }
+    &__wrapper{
+        width: 1600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &-logo{
+            font-size: 36px;
+
+            font-weight: 600;
+        }
+        &-links{
+            display: flex;
+            flex-direction: row;
+            gap: 90px;
+            a{
+                font-weight: 400;
+                font-size: 24px;
+                color: #000;
+
+            }
+            .--active{
+                color: #BC2041;
+            }
+        }
+        &-icons{
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+        }
+    }
+}

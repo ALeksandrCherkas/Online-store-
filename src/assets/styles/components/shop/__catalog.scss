@@ -1,0 +1,78 @@
+.catalog{
+    margin-top: 66px;
+    display: flex;
+    justify-content: center;
+    &__wrapper{
+        width: 85.1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__showMore{
+            font-weight: 500;
+            font-size: 36px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.62);
+            margin: 40px 0;
+        }
+
+        &__cards{
+            margin-top: 2rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            justify-items: center;
+            row-gap: 66px;
+    
+        }
+    }
+}
+
+.card{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    img{   
+        height: 425px;
+        width: 100%;
+        object-fit:contain;
+    }
+    p{
+        text-wrap:nowrap;
+        font-weight: 500;
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.62);
+    }
+    &__raiting{
+        display: flex;
+        span{
+            font-size: 35px;
+            color: rgba(0, 0, 0, 0.62);
+        }
+        .full{
+            color: #ff6a00;
+        }
+    }
+    &__price-block{
+        margin-top: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            border-radius: 5px;
+            width: 197px;
+            
+            background: #000;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 36px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

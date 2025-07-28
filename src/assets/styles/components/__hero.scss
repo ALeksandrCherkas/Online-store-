@@ -1,0 +1,69 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 142px;
+    &__wrapper{
+        margin-top: 112px;
+        display: flex;
+        height: 590px;
+        flex-direction: row;
+        gap: 66px;
+        width: 85.1%;
+    }
+    &__text{
+        width: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-family: 'Wittgenstein';
+            font-weight: 500;
+            font-size: 40px;
+            text-align: center;
+            color: #000;
+            .discount{
+                color: #bc2041;;
+            }
+        }
+
+        .timer{
+            display: flex;
+            gap: 10px;
+            &__block{
+                gap: 3px;
+                display: flex;
+                h1{
+                    font-size: 64px;
+                }
+                span{
+                    font-weight: 500;
+                    font-size: 64px;
+                    color: #fff;
+                    background: rgba(0, 0, 0, 0.72);
+                    border-radius: 10px;
+                    
+                }
+                
+            }
+            #seconds{
+                span{
+                    color: #BC2041;
+                }  
+            }
+
+            
+        }
+
+    }
+
+    &__img{
+        img{
+            object-fit: cover;
+            border-radius: 0 50px;
+            width: 885px;
+            height: 590px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+        }
+    }
+}
